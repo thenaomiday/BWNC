@@ -181,3 +181,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/* Don't show the admin bar unless we are in admin mode! */
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+		show_admin_bar(false);
+	}
+}
+add_action('after_setup_theme', 'remove_admin_bar');

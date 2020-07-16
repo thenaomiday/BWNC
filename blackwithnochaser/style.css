@@ -47,6 +47,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
+# Customization
+	- Footer
 
 --------------------------------------------------------------*/
 
@@ -403,8 +405,8 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
+	font-family: "Raleway", sans-serif;
+	font-size: 1em;
 	line-height: 1.5;
 }
 
@@ -414,10 +416,31 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
 	clear: both;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.17em;
+}
+h4 {
+	font-size: 1em;
+}
+h5 {
+	font-size: .83em;
+}
+h6 {
+	font-size: .67em;
 }
 
 p {
+	font-family: "Raleway", sans-serif;
 	margin-bottom: 1.5em;
 }
 
@@ -690,11 +713,20 @@ textarea {
 
 .main-navigation li {
 	position: relative;
+	margin: 1em 1em 1em 1em;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #111118;
+}
+
+.main-navigation a:hover {
+	color: #CC7400;
 }
 
 /* Small menu. */
@@ -711,6 +743,7 @@ textarea {
 
 	.main-navigation ul {
 		display: flex;
+		justify-content: flex-end;
 	}
 }
 
@@ -966,4 +999,81 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Customization
+--------------------------------------------------------------*/
+
+/* Footer
+--------------------------------------------- */
+.full-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-flexbox {
+	/* Outermost footer container has four columns that stack on small widths */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 2em 2em 2em 2em;
+}
+
+.footer-center-columns {
+	/* Center three columns in footer has three columns in it */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footer-column {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 2.5em 0 2.5em;
+}
+
+.footer-headers {
+	margin-top: 0px;
+}
+
+.footer-ul {
+	padding: 0;
+	margin: 0;
+	font-size: .9375em;
+}
+
+.footer-li {
+	list-style: none;
+	margin: 0 0 .5em 0;
+}
+
+.footer-a {
+	text-decoration: none;
+	color: #F5A314 !important;
+}
+
+.footer-a:hover {
+	color: #CC7400 !important;
+}
+
+.footer-rights {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: .8125em;
+	margin: 0 0 1em 0;
+}
+
+.fa {
+	font-size: 1.25em;
+	width: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	color: #F5A314 !important;
+}
+
+.fa:hover {
+	color: #CC7400 !important;
 }
