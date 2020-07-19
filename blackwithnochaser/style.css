@@ -48,7 +48,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Accessibility
 	- Alignments
 # Customization
+	- Home page
 	- Footer
+	- Buttons
 
 --------------------------------------------------------------*/
 
@@ -421,7 +423,7 @@ h6 {
 	clear: both;
 }
 h1 {
-	font-size: 2em;
+	font-size: 2.3em;
 }
 h2 {
 	font-size: 1.5em;
@@ -670,6 +672,10 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+.site-header {
+	background-color: #111118;
+}
+
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -722,11 +728,11 @@ textarea {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
-	color: #111118;
+	color: #F0FAF1;
 }
 
 .main-navigation a:hover {
-	color: #CC7400;
+	color: #C2EBC6;
 }
 
 /* Small menu. */
@@ -780,10 +786,10 @@ textarea {
 	display: block;
 }
 
-.post,
+/* .post,
 .page {
 	margin: 0 0 1.5em;
-}
+} */
 
 .updated:not(.published) {
 	display: none;
@@ -792,7 +798,7 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 0;
 }
 
 .page-links {
@@ -1005,11 +1011,328 @@ textarea {
 # Customization
 --------------------------------------------------------------*/
 
+/* Home page
+--------------------------------------------- */
+/* Hide header (not needed) */
+.entry-header {
+	display: block;
+}
+
+.home-top-columns {
+	height: 15vh;
+	width: 100%;
+	margin: 0;
+}
+
+.home-column-stretch {
+	height: 100%;
+	width: 100%;
+}
+
+.home-column-remove-margins {
+	margin: 0 !important;
+}
+
+.home-image-adjustment {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0;
+}
+.home-image-adjustment img {
+	/* The follow is manually set because the images wouldn't stay within their containers*/
+	max-height: 15vh;
+}
+
+.home-title-columns {
+	height: 30vh;
+	margin: 0;
+}
+
+.home-title-padding {
+	padding-top: 3vh;
+	font-size: 2.7em;
+	line-height: 1;
+}
+.home-subtitle {
+	text-transform: lowercase;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+}
+
+.home-thin-columns {
+	height: 10vh;
+	width: 100%;
+	margin: 0;
+}
+
+.home-last-columns {
+	height: 20vh;
+	width: 100%;
+	margin: 0;
+}
+
+.black-background {
+	background-color: #111118;
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+}
+
+.yellow-background {
+	background-color: #FFCC33;
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+}
+
+.orange-background {
+	background-color: #F5A314;
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+}
+
+.deep-orange-background {
+	background-color: #CC7400;
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+}
+
+.green-background {
+	background-color: #73BF7B;
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+}
+.deep-green-background {
+	background-color: #297045;
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+}
+
+.home-blog-featured-row {
+	background-color: #F0FAF1;
+	margin: 0;
+	padding: 0 0 3vh 5vw;
+}
+.home-blog-featured-row p {
+	color: #111118;
+	font-size: 1.17em;
+	padding: 10vh 0 0 0;
+}
+.home-blog-featured-row a {
+	color: #F5A314 !important;
+	text-decoration: none;
+	font-weight: 700;
+}
+.home-blog-featured-row a:hover {
+	color: #CC7400 !important;
+}
+.home-blog-featured-row img {
+	max-height: 30vh;
+	display: block;
+	margin: 0 auto;
+}
+
+.home-blog-category-row {
+	background-color: #F0FAF1;
+	margin: 0;
+	padding: 3vh 5vw 0 0;
+}
+.home-blog-category-row p {
+	color: #111118;
+	font-size: 1.17em;
+	padding: 5vh 0 0 0;
+}
+.home-blog-category-row a {
+	color: #F5A314 !important;
+	text-decoration: none;
+	font-weight: 700;
+}
+.home-blog-category-row a:hover {
+	color: #CC7400 !important;
+}
+
+.home-blog-submit {
+	background-color: #F0FAF1;
+	font-size: 1.17em;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 5vh 5vh 10vh 5vh;
+}
+.home-blog-submit a {
+	color: #F5A314 !important;
+	text-decoration: none;
+	font-weight: 700;
+}
+.home-blog-submit a:hover {
+	color: #CC7400 !important;
+}
+
+.home-about-us {
+	padding-left: 5vw;
+	background-color: #111118;
+	margin: 0;
+}
+.home-about-us-text {
+	padding: 5vh 5vw 0 0;
+}
+.home-about-us-text p {
+	padding: 0 5vw;
+}
+
+.home-about-us h2 {
+	font-size: 1.7em;
+	font-weight: normal;
+	margin-bottom: 5vh;
+}
+.home-about-us a {
+	color: #F5A314 !important;
+	text-decoration: none;
+	font-weight: 700;
+}
+.home-about-us a:hover {
+	color: #CC7400 !important;
+}
+
+.home-shop-text {
+	color: #111118;
+	background-color: #F0FAF1;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 8vh 0;
+}
+.home-shop a {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-size: 1.7em;
+	color: #F5A314 !important;
+	text-decoration: none;
+}
+.home-shop a:hover {
+	color: #CC7400 !important;
+}
+.home-shop-collections {
+	margin: 0;
+	padding: 0 2vw 8vw 2vw;
+	background-color: #F0FAF1;
+}
+.home-shop-collections img {
+	display: block;
+	margin: 0 auto;
+	max-height: 31vh;
+}
+.home-shop-collections h2 {
+	font-size: 1.17em;
+	font-weight: 600;
+	text-align: center;
+	color: #111118;
+}
+
+.home-brands {
+	margin: 0;
+	padding-right: 5vw;
+	background-color: #111118;
+}
+
+.home-brands-text {
+	padding-top: 10vh;
+	font-size: 1.7em;
+	color: #F0FAF1;
+}
+.home-brands-text a {
+	color: #F5A314;
+	text-decoration: none;
+	font-weight: 700;
+}
+.home-brands-text a:hover {
+	color: #CC7400;
+}
+
+.home-brand-box {
+	margin: 0;
+	height: 15vh;
+	width: 33.33%;
+}
+.home-brand-box h5 {
+	margin: 0;
+	padding: 0 10px;
+	height: 15vh;
+	position: relative;
+}
+.home-brand-box a {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+}
+.home-brand-money {
+	background-color: #CC7400;
+}
+.home-brand-travel {
+	background-color: #73BF7B;
+}
+.home-brand-fly-life {
+	background-color: #F5A314;
+}
+.home-brand-advocacy {
+	background-color: #297045;
+}
+.home-brand-lifestyle {
+	background-color: #F0FAF1;
+}
+.home-brand-music {
+	background-color: #FFCC33;
+}
+.home-brand-sports {
+	background-color: #F5A314;
+}
+.home-brand-politics {
+	background-color: #73BF7B;
+}
+.home-brand-money a,
+.home-brand-travel a,
+.home-brand-fly-life a,
+.home-brand-advocacy a,
+.home-brand-lifestyle a,
+.home-brand-music a,
+.home-brand-sports a,
+.home-brand-politics a
+{
+	color: #111118
+}
+.home-brand-money a:hover,
+.home-brand-travel a:hover,
+.home-brand-fly-life a:hover,
+.home-brand-advocacy a:hover,
+.home-brand-lifestyle a:hover,
+.home-brand-music a:hover,
+.home-brand-sports a:hover,
+.home-brand-politics a:hover
+{
+	opacity: 0.7
+}
+.home-brand-lunch {
+	background-color: #111118;
+}
+.home-brand-lunch a {
+	color: #F0FAF1;
+}
+.home-brand-lunch a:hover {
+	opacity: 0.7;
+}
+
 /* Footer
 --------------------------------------------- */
 .full-footer {
 	display: flex;
 	flex-direction: column;
+	background-color: #F0FAF1;
 }
 
 .footer-flexbox {
@@ -1017,7 +1340,7 @@ textarea {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 2em 2em 2em 2em;
+	margin: 3em 2em 2em 2em;
 }
 
 .footer-center-columns {
@@ -1077,3 +1400,20 @@ textarea {
 .fa:hover {
 	color: #CC7400 !important;
 }
+
+/* Buttons
+--------------------------------------------- */
+/* .home-about-us-button {
+	margin-left: 5vw;
+}
+.home-about-us-button a {
+	font-size: 1em;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	background-color: #111118;
+	color: #F5A314;
+}
+.home-about-us-button a:hover {
+	color: #CC7400;
+} */
