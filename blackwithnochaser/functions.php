@@ -147,6 +147,7 @@ function blackwithnochaser_scripts() {
 	wp_style_add_data( 'blackwithnochaser-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'blackwithnochaser-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'blackwithnochaser-navigation-scroll', get_template_directory_uri() . '/js/navigation-scroll.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

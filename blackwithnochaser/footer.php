@@ -19,7 +19,7 @@
 			<!-- COL WITH LOGO -->
 			<div class="footer-column">
 				<a href="https://blackwithnochaser.com/">
-					<img src="https://placekitten.com/100/100" alt="BWNC logo" width="100" height="100"/>
+					<img class="footer-logo" src="http://naomid5.sg-host.com/wp-content/uploads/2020/07/BWNC-FINAL-LOGO-white-W-TEXT-01.png" alt="BWNC logo"/>
 				</a>
 			</div>
 
@@ -99,12 +99,7 @@
 					<ul class="footer-ul">
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">About + History</a>');
-							?>
-						</li>
-						<li class="footer-li">
-							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Team</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Mission + Team</a>');
 							?>
 						</li>
 						<li class="footer-li">

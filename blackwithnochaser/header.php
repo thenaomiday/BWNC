@@ -20,7 +20,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<!-- social media icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script src="https://use.fontawesome.com/fa595db62b.js"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -31,15 +32,12 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'blackwithnochaser' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<span class="site-branding">
+		<nav id="site-navigation" class="main-navigation">
 			<?php
 			if ( function_exists( 'the_custom_logo' ) ) {
 				the_custom_logo();
 			}
 			?>
-		</span><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'blackwithnochaser' ); ?></button>
 			<?php
 			wp_nav_menu(
@@ -49,5 +47,15 @@
 				)
 			);
 			?>
+			<div>
+				<div class="header-social-icons">
+					<a href="https://www.facebook.com/blackwithnochaser" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/blacknochaser" target="_blank" class="fa fa-twitter"></a>
+				</div>
+				<div class="header-social-icons">
+					<a href="https://www.instagram.com/blackwithnochaser/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/channel/UCMhhD71qlQVXqm2-Ph3k-dw" target="_blank" class="fa fa-youtube"></a>
+				</div>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
