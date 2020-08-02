@@ -33,29 +33,8 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-			<?php
-			if ( function_exists( 'the_custom_logo' ) ) {
-				the_custom_logo();
-			}
-			?>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'blackwithnochaser' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-			<div>
-				<div class="header-social-icons">
-					<a href="https://www.facebook.com/blackwithnochaser" target="_blank" class="fa fa-facebook"></a>
-					<a href="https://twitter.com/blacknochaser" target="_blank" class="fa fa-twitter"></a>
-				</div>
-				<div class="header-social-icons">
-					<a href="https://www.instagram.com/blackwithnochaser/" target="_blank" class="fa fa-instagram"></a>
-					<a href="https://www.youtube.com/channel/UCMhhD71qlQVXqm2-Ph3k-dw" target="_blank" class="fa fa-youtube"></a>
-				</div>
-			</div>
+			<a href="https://blackwithnochaser.com/">
+				<img class="header-logo" src="http://naomid5.sg-host.com/wp-content/uploads/2020/07/BWNC-FINAL-LOGO-white-W-TEXT-02.png" alt="BWNC logo"/>
+			</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

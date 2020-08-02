@@ -37,22 +37,22 @@
 					<ul class="footer-ul">
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Category 1</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">category 1</a>');
 							?>
 						</li>
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Category 2</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">category 2</a>');
 							?>
 						</li>
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Category 3</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a"category 3</a>');
 							?>
 						</li>
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Category 4</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">category 4</a>');
 							?>
 						</li>
 					</ul>
@@ -68,17 +68,17 @@
 					<ul class="footer-ul">
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Money Talks</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">money talks</a>');
 							?>
 						</li>
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Very Fly Life</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">very fly life</a>');
 							?>
 						</li>
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Advocacy and Consulting</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">advocacy and consulting</a>');
 							?>
 						</li>
 						<li class="footer-li">
@@ -99,12 +99,12 @@
 					<ul class="footer-ul">
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Mission + Team</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">mission + team</a>');
 							?>
 						</li>
 						<li class="footer-li">
 							<?php
-							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">Careers</a>');
+							printf( esc_html__( '%s', 'blackwithnochaser' ), '<a href="https://google.com" class="footer-a">careers</a>');
 							?>
 						</li>
 					</ul>

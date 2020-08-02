@@ -147,7 +147,8 @@ function blackwithnochaser_scripts() {
 	wp_style_add_data( 'blackwithnochaser-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'blackwithnochaser-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'blackwithnochaser-navigation-scroll', get_template_directory_uri() . '/js/navigation-scroll.js', array(), _S_VERSION, true );
+	// wp_enqueue_script( 'blackwithnochaser-navigation-scroll', get_template_directory_uri() . '/js/navigation-scroll.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'blackwithnochaser-parallax-scroll', get_template_directory_uri() . '/js/parallax-scroll.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -184,8 +185,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 /* Don't show the admin bar unless we are in admin mode! */
 function remove_admin_bar() {
-	if (!current_user_can('administrator') && !is_admin()) {
+	// if (!current_user_can('administrator') && !is_admin()) {
 		show_admin_bar(false);
-	}
+	// }
 }
 add_action('after_setup_theme', 'remove_admin_bar');
