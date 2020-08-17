@@ -33,8 +33,17 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
+			<div class="menu-block">
+				<a href="http://naomid5.sg-host.com/black-voices/" class="menu-item">Black Voices</a>
+				<a href="http://naomid5.sg-host.com/shop/" class="menu-item">Shop</a>
+			</div>
 			<a href="https://blackwithnochaser.com/">
 				<img class="header-logo" src="http://naomid5.sg-host.com/wp-content/uploads/2020/07/BWNC-FINAL-LOGO-white-W-TEXT-02.png" alt="BWNC logo"/>
 			</a>
+			<div class="menu-block">
+				<a href="http://naomid5.sg-host.com/about/" class="menu-item">About</a>
+				<a href="http://naomid5.sg-host.com/brands/" class="menu-item">Brands</a>
+				<a href="http://naomid5.sg-host.com/contact/" class="menu-item">Contact</a>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
